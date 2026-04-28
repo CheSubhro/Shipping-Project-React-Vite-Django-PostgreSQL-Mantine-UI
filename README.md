@@ -1,0 +1,1 @@
+# Shipping-Project-React-Vite-Django-PostgreSQL-Mantine-UI
