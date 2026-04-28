@@ -1,0 +1,36 @@
+1. Backend Architecture (Django & PostgreSQL)
+Framework: Built a robust API using Django REST Framework (DRF).
+
+Database: Integrated Neon PostgreSQL (Serverless Cloud DB) for reliable data storage.
+
+Models: Created a ShippingRate model to store source, destination, distance, weight, and total cost.
+
+Admin Panel: Registered models with Django Admin for easy data management and monitoring.
+
+2. Intelligent Geocoding & Mapping
+Geocoding: Integrated Nominatim (OpenStreetMap) to automatically fetch Latitude and Longitude from city names.
+
+Road Distance: Utilized OSRM (Open Source Routing Machine) API to calculate actual driving distance instead of a straight line.
+
+3. Shipping Logic & Costing
+Implemented a professional pricing algorithm:
+
+Base Price: Flat ₹50.
+
+Distance Charge: ₹5 per KM (with the first 10km free).
+
+Weight Charge: ₹10 per KG.
+
+Data Breakdown: The API returns a detailed cost breakdown (Base + Distance + Weight).
+
+4. Security & Connectivity (CORS)
+CORS Configuration: Configured django-cors-headers to allow secure communication between the React frontend (Port 5173) and the Django backend.
+
+5. Frontend UI (React & Mantine)
+Library: Used Mantine UI for a modern, responsive, and professional component design.
+
+State Management: Managed form inputs and API responses using React hooks.
+
+Axios Integration: Connected the frontend to the backend API for seamless data fetching.
+
+UX Features: Added loading states and success cards to provide real-time user feedback.
